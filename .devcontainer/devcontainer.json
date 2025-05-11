@@ -1,0 +1,24 @@
+{
+    "name": "Hello CLI",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "context": ".."
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                // "ms-vscode.cmake-tools",
+                "ms-vscode.cpptools"
+            ],
+            "settings": {
+                "terminal.integrated.shell.linux": "/bin/bash",
+                "cmake.configureOnOpen": true,
+                "cmake.buildDirectory": "${workspaceFolder}/build",
+                "cmake.sourceDirectory": "${workspaceFolder}",
+                "cmake.generator": "Ninja",
+                "cmake.cmakePath": "/usr/bin/cmake"
+            }
+        }
+    },
+    // "postCreateCommand": "cmake .. && cmake --build ."
+}
