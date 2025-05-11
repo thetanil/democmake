@@ -2,6 +2,6 @@
 
 int main()
 {
-    printf("Hello, democmake!\n");
+    printf("Hello, 0.3.0!\n");
     return 0;
 }
