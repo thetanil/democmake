@@ -10,18 +10,21 @@ tasks:
 
   lint:
     desc: "Run linters"
+    dir: "{{.TASKFILE_DIR}}"
     cmds:
       - echo "Running linters..."
       - echo "Linters completed."
 
   test:
     desc: "Run tests"
+    dir: "{{.TASKFILE_DIR}}"
     cmds:
       - echo "Running tests..."
       - echo "Tests completed."
 
   build:
     desc: "Build the project"
+    dir: "{{.TASKFILE_DIR}}"
     cmds:
       - echo "Building the project..."
       - make build
